@@ -2,21 +2,23 @@
 
 # Pre Requisites
 
-(You may already have it install it in your base Python)
-Install Virtuv package manager:
-```bash
-pip install uv
-```
+Install uv: [Installing uv](https://docs.astral.sh/uv/getting-started/installation/#pypi)
 
 Check uv installation:
 ```bash
 uv --help
 ```
 
-Create a uv project on the current project folder
+Create a uv project on the current project folder, given the project specification
 ```bash
-uv init
+uv sync
 ```
+This will create a Virtual Environment called .venv
+
+
+Activate the Virtual Environment,
+following the specific instructions for your OS,
+for example, with Win/Powershell: `.\.venv\Scripts\activate`
 
 This will create a virtual environment in .venv folder and some files and install the dependencies especifed in uv project files: [Project structure and files](https://docs.astral.sh/uv/concepts/projects/layout/)
 
