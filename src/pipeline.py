@@ -28,7 +28,7 @@ def clean_md_heading(heading: str) -> str:
 
 def fix_section_title_l1_candidate(text, lst_titles):
     # los headers que esten en la lista, se corrigen para tener solo un #
-    clean_text = clean_md_heading(text)  # remove # if present
+    clean_text = clean_md_heading(text).strip()  # remove # if present
     # may add to_lower and strip()
     
     if clean_text in lst_titles:
