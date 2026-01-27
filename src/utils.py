@@ -6,8 +6,8 @@ from langchain_core.documents import Document
 
 
 def corpus_stats(encoding, corpus: List[Document]) -> pd.Series:
-    lst_docs = [encoding.encode(doc.page_content) for doc in corpus]
-    data = [len(x) for x in lst_docs]
+    lst_docs = [encoding.encode(doc.page_content) for doc in corpus]  # docs tokenizados
+    data = [len(x) for x in lst_docs]  # lista de longitudes [27, 125, ...]
     return pd.Series(data)
 
 

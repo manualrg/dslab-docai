@@ -12,3 +12,4 @@ mistralai==1.9.10
 langchain-core==0.3.75                                                                                                                                                                                                       
 langchain-text-splitters==0.3.11
 langchain-docling==1.0.0
+langchain-experimental==0.3.4
