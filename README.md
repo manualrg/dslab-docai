@@ -26,7 +26,7 @@ As project is based in notebooks, three popular approaches can be followed:
 and install ipykernel with `pip install ipykernel`
 
 
-Donwload `docling` models (if not automatically done):
+Download `docling` models (if not automatically done):
 ```bash
 docling-tools models download
 ```
